@@ -1,0 +1,24 @@
+环境：
+conda activate pytracking
+
+训练：
+
+python train.py
+训练集设置：
+rdvoc.py line28\29
+RDVOC_ROOT = "/media/orange/D/HWP/datasets/RDVOC_2019/RDVOC/"
+RDVOC_ROOT_test = "/media/orange/D/HWP/datasets/RDVOC_2019/RDVOC/"
+
+训练集　txt 文件设置：
+train.py line99 (trainval.txt)
+image_sets=[('RDVOC_new'), ('trainval')]
+
+
+测试：
+
+python eval_rdvoc.py
+测试集设置：
+eval_rdvoc.py line72\73\74
+annopath = os.path.join(args.voc_root, 'Annotations', '%s.xml')
+imgpath = os.path.join(args.voc_root, 'JPEGImages', '%s.jpg')
+imgsetpath = os.path.join(args.voc_root, "ImageSets/Main/", '{:s}.txt') # (test.txt)

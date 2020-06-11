@@ -1,0 +1,24 @@
+
+实验说明：
+数据集：
+RDVOC_ROOT = '/media/orange/D/HWP/datasets/RDVOC_2019/OTBseq_all/SiamDW_crop/VID'
+RDVOC_ROOT_test = '/media/orange/D/HWP/datasets/RDVOC_2019/OTBseq_all/SiamDW_crop/VID'
+
+训练方式：
+将源数据分为多个长度为５００的序列，每次随机选择一个序列，截取其一段作为输入，截取片段帧长为１０．
+
+测试方式：
+将测试集切分成长度为１０的序列集合，依次送入进行测试．
+
+测试结果：
+因为在切分数据集的时候，没有将target3切出来，所以只有target1/2的测试结果．
+AP for target1 = 0.896
+AP for target2 = 0.955
+AP for target3 = 0.0000
+Mean AP = 0.6170
+~~~~~~~~
+Results:
+0.896
+0.955
+0.000
+0.617
