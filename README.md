@@ -1,7 +1,7 @@
 # SSD_ConvLSTM_final
   This is a consecutive frame target detection project by adding convlstm to SSD
 
-# The modify by me one SSD:
+# The difference between SSD and SSD_ConvLSTM:
 SSD constructure:
 ![SSD constructure](https://github.com/hunwenpinghao/SSD_ConvLSTM_final/blob/master/SSD_ConvLSTM_final/figure/SSD_LSTM.jpg?raw=true)
 
