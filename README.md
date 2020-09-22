@@ -4,7 +4,8 @@
 # Description
 By adding conv LSTM to SSD, the highest accuracy is improved by nearly 10%. We have carried out on the radar data set provided by 25 customers. There are three targets in total. The network improves target 2 and target 3 greatly, target 2 increases by 5%, target 3 increases by 10%, and target 1 only improves by less than 1%.
 
-
+# Make DataSet
+You can use the `split_vidseq.py` in `./data/` to make your own dataset. Since my data is confidential, it is not convenient to release it.
 
 # The difference between SSD and SSD_ConvLSTM:
 SSD constructure:
